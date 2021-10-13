@@ -42,6 +42,11 @@ main, main div#main-wrapper {
     text-align: center;
 }
 
+.display-center {
+    display: flex;
+    justify-content: center;
+}
+
 .main-font-family {
     font-family: 'Xilosa';
 }
@@ -129,6 +134,13 @@ h1#main-title span {
 #decoration-right #right-ribbon3 {
     max-width: 150px;
     align-self: flex-end;
+}
+
+.social-media a:nth-child(odd) {
+    margin-right: 20px;
+}
+.social-media a {
+    display: block;
 }
 
 @keyframes bounceRibbonsLeft {
