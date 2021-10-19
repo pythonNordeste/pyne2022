@@ -78,7 +78,7 @@
         </div>
 
         <div id="main-wrapper">
-            <img src="img/logo_transparente.png" id="main-logo" alt="Logo Python Nordeste 2022 (cobra python enrolada num caju)">
+            <div style="width: 200px" id="cobracaju"></div>
     
             <div class="main-description text-center">
                 <h1 id="main-title" class="main-font-family">PyNE <span class="year">2022</span></h1>
@@ -92,6 +92,18 @@
                 </div>
             </div>
         </div>
+        
+        <script src="lottie_light.min.js"></script>
+        <script>
+            bodymovin.loadAnimation({
+                container: document.getElementById('cobracaju'),
+                path: 'cobracaju.json',
+                renderer: 'svg',
+                loop: false,
+                autoplay: true,
+                name: "Cobra Caju",
+            })
+        </script>
     </main>
 </body>
 </html>

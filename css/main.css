@@ -51,10 +51,10 @@ main, main div#main-wrapper {
     font-family: 'Xilosa';
 }
 
-img#main-logo {
+#cobracaju {
     max-width: 200px;
     z-index: 10;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 h1#main-title {
@@ -177,10 +177,6 @@ h1#main-title span {
 @media (max-width: 768px) {
     .decorations img {
         max-width: 200px;
-    }
-    img#main-logo {
-        max-width: 150px;
-        margin-bottom: 10px
     }
     h1#main-title {
         font-size: 4rem;
