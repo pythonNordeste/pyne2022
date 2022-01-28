@@ -1,0 +1,418 @@
+img, a, p {
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    font-family: "Saira", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+body.modo-noturno {
+    background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    position: fixed;
+    z-index: 20;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.mb-section {
+    margin-bottom: 30px;
+}
+
+nav#nav-desktop {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div#toggle-modo-nortuno {
+    position: absolute;
+    z-index: 3;
+}
+
+.bandeirola {
+    cursor: pointer
+}
+
+nav#nav-mobile,
+body.modo-noturno .bandeirolas img.img-white,
+body:not(.modo-noturno) .bandeirolas img.img-black,
+body.modo-noturno #toggle-modo-nortuno img.img-black,
+body:not(.modo-noturno) #toggle-modo-nortuno img.img-white,
+body:not(.modo-noturno) #img-principal img.img-white,
+body.modo-noturno div#img-principal img.img-black,
+body:not(.modo-noturno) div#img-principal img.img-white,
+body.modo-noturno footer img.img-black,
+body:not(.modo-noturno) footer img.img-white   {
+    display: none
+}
+
+img.icon {
+    width: 60px;
+}
+
+div#toggle-modo-nortuno {
+    right: 30px;
+    top: 30px;
+}
+
+div#toggle-modo-nortuno button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.azul,
+body:not(.modo-noturno) main {
+    color: #150069
+}
+.ciano,
+body.modo-noturno main {
+    color: #007ED3
+}
+
+/**/
+nav#nav-desktop div.bandeirola:first-child{
+    background-color: #D70800;
+}
+nav#nav-desktop div.bandeirola:first-child:after {
+    border-color: #D70800 transparent #D70800 #D70800;
+}
+
+nav#nav-desktop div.bandeirola:nth-child(2) {
+    background-color: #FFC900;
+}
+nav#nav-desktop div.bandeirola:nth-child(2):after {
+    border-color: #FFC900 transparent #FFC900 #FFC900;
+}
+
+nav#nav-desktop div.bandeirola:nth-child(3){
+    background-color: #00923F;
+}
+nav#nav-desktop div.bandeirola:nth-child(3):after {
+    border-color: #00923F transparent #00923F #00923F;
+}
+
+nav#nav-desktop div.bandeirola:nth-child(4) {
+    background-color: #150069;
+}
+nav#nav-desktop div.bandeirola:nth-child(4):after {
+    border-color: #150069 transparent #150069 #150069;
+}
+
+/**/
+nav#nav-mobile div.bandeirola:first-child {
+    width: 50px;
+    background-color: #150069;
+}
+nav#nav-mobile div.bandeirola:first-child:after {
+    border-color: #150069 #150069 transparent #150069;
+    border-width: 14px 25px 20px;
+    transition: border 0.5s
+}
+nav#nav-mobile div.bandeirola:first-child:hover:after {
+    border-top-width: 20px;
+}
+body.modo-noturno nav#nav-mobile div.bandeirola:first-child {
+    background-color: #007ED3;
+}
+body.modo-noturno nav#nav-mobile div.bandeirola:first-child:after {
+    border-color: #007ED3 #007ED3 transparent #007ED3;
+}
+
+nav#nav-mobile div.bandeirola:nth-child(2) {
+    width: 80px;
+    background-color: #00923F;
+}
+nav#nav-mobile div.bandeirola:nth-child(2):after {
+    border-color: #00923F #00923F transparent #00923F;
+    border-width: 43px 40px 20px;
+    top: 0;
+    transition: border 0.5s
+}
+nav#nav-mobile div.bandeirola:nth-child(2):hover:after {
+    border-top-width: 49px;
+}
+
+nav#nav-mobile div.bandeirola:nth-child(3) {
+    width: 75px;
+    background-color: #FFC900;
+}
+nav#nav-mobile div.bandeirola:nth-child(3):after {
+    border-color: #FFC900 #FFC900 transparent #FFC900;
+    border-width: 40px 38px 20px;
+    top: 3px;
+    transition: border 0.5s
+}
+nav#nav-mobile div.bandeirola:nth-child(3):hover:after {
+    border-top-width: 46px;
+}
+
+nav#nav-mobile div.bandeirola:nth-child(4) {
+    width: 94px;
+    background-color: #D70800;
+}
+nav#nav-mobile div.bandeirola:nth-child(4):after {
+    border-color: #D70800 #D70800 transparent #D70800;
+    border-width: 13px 47px 20px;
+    transition: border 0.5s
+}
+nav#nav-mobile div.bandeirola:nth-child(4):hover:after {
+    border-top-width: 19px;
+}
+body.modo-noturno nav#nav-mobile div.bandeirola:nth-child(4) {
+    background-color: #D70086;
+}
+body.modo-noturno nav#nav-mobile div.bandeirola:nth-child(4):after {
+    border-color: #D70086 #D70086 transparent #D70086;
+}
+
+/**/
+body.modo-noturno  nav#nav-desktop div.bandeirola:first-child {
+    background-color: #D70086;
+}
+body.modo-noturno  nav#nav-desktop div.bandeirola:first-child:after {
+    border-color: #D70086 transparent #D70086 #D70086;
+}
+
+body.modo-noturno  nav#nav-desktop div.bandeirola:nth-child(4) {
+    background-color: #007ED3;
+}
+body.modo-noturno  nav#nav-desktop div.bandeirola:nth-child(4):after {
+    border-color: #007ED3 transparent #007ED3 #007ED3;
+}
+
+nav#nav-desktop .bandeirola {
+    width: 67px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 66px;
+}
+
+nav#nav-desktop .bandeirola:after {
+    content: '';
+    line-height: 0;
+    border-style: solid;
+    border-width: 43px;
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+    transition: left 0.5s
+}
+
+nav#nav-desktop .bandeirola:hover:after {
+    left: 75px;
+}
+
+div#img-principal {
+    max-height: 935px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+div#img-principal img {
+    width: 100%;
+    height: 100%;
+    max-width: 1550px;
+}
+
+.section {
+    padding-right: 10px;
+}
+
+.section p, footer p {
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 25px 10px;
+}
+
+.display-center {
+    display: flex;
+    justify-content: center;
+}
+
+.rainbow-text {
+    border-width: 3px;
+    border-style: solid;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-image: 
+      linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) 1 1 100%;
+}
+
+.section h1, .section h2 {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a:not(.last-child) {
+    margin-right: 10px;
+}
+
+nav#nav-mobile {
+    opacity: 1;
+    display: none;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    background: #007ED3;
+    height: 38px;
+    transition: opacity 0.5s;
+}
+body.modo-noturno nav#nav-mobile {
+    background: #150069;
+    color: #fff
+}
+
+nav#nav-mobile .bandeirola {
+    font-size: 12px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav#nav-mobile .bandeirola a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 5px;
+    line-height: 15px;
+}
+body.modo-noturno nav#nav-mobile .bandeirola a {
+    color: #fff
+}
+
+nav#nav-mobile .bandeirola:after {
+    content: '';
+    line-height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: top 0.5s;
+    z-index: -1;
+}
+.opacity-none {
+    opacity: 0 !important
+}
+
+@media (max-width: 1800px) and (min-width: 901px) {
+    nav#nav-desktop {
+        top: auto;
+        transform: none;
+        bottom: 0;
+    }
+    .section, footer {
+        margin-left: 150px;
+    }
+    img.icon {
+        width: 40px;
+    }
+    div#img-principal img {
+        max-width: 1050px;
+    }
+    nav#nav-desktop .bandeirola {
+        width: 40px;
+        height: 50px;
+    }
+    nav#nav-desktop .bandeirola:after {
+        left: 30px;
+        border-width: 35px;
+    }
+    nav#nav-desktop .bandeirola:hover:after {
+        left: 50px;
+    }
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    nav#nav-desktop {
+        display: none
+    }
+    nav#nav-mobile {
+        display: flex;
+    }
+    div#img-principal {
+        max-height: 100vh;
+    }
+    .section {
+        padding: 0 30px;
+    }
+    img.icon {
+        width: 40px;
+    }
+    div#toggle-modo-nortuno {
+        right: 10px;
+        top: 10px;
+    }
+    div#inicio {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 800) {
+    img.icon {
+        width: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 320px) {
+    div#inicio {
+        margin-top: 0;
+    }
+    img.icon {
+        width: 30px;
+    }
+    nav#nav-mobile .bandeirola {
+        font-size: 10px;
+    }
+}
