@@ -296,6 +296,7 @@ nav#nav-mobile {
     background: #007ED3;
     height: 38px;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 body.modo-noturno nav#nav-mobile {
     background: #150069;
