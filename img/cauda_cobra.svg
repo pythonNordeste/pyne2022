@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1203" height="233" viewBox="0 0 1203 233">
+  <defs>
+    <clipPath id="clip-cauda_cobra1">
+      <rect width="1203" height="233"/>
+    </clipPath>
+  </defs>
+  <g id="cauda_cobra1" clip-path="url(#clip-cauda_cobra1)">
+    <g id="Grupo_22" data-name="Grupo 22" transform="translate(1610.591 -5634.162)">
+      <path id="Caminho_1" data-name="Caminho 1" d="M1112.629-381.245s-82.343,63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1618.102 6191.25)" fill="none" stroke="#150069" stroke-width="48"/>
+      <path id="Caminho_3" data-name="Caminho 3" d="M1112.629-381.245s-82.343,63.75-181.374,0-178.255,0-178.255,0" transform="translate(-2335.591 6189.481)" fill="none" stroke="#150069" stroke-width="48"/>
+      <path id="Caminho_2" data-name="Caminho 2" d="M1112.629-381.245s-82.343,63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1977.141 6190.66)" fill="none" stroke="#150069" stroke-width="48"/>
+      <path id="Caminho_15" data-name="Caminho 15" d="M-522.03,5800.129s57.562-27.013,65.621-70.647-14.966-65.452-14.966-65.452,39.142,20.778,49.5,65.452c6.8,29.306-27.285,74.661-50.822,96.471-12.009,11.128-20.293,9.472-20.293,9.472Z" transform="matrix(1, -0.017, 0.017, 1, -116.216, -7.353)" fill="#150069"/>
+    </g>
+  </g>
+</svg>

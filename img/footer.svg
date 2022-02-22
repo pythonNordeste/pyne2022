@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="839" viewBox="0 0 1366 839">
+  <defs>
+    <clipPath id="clip-footer1">
+      <rect width="1366" height="839"/>
+    </clipPath>
+  </defs>
+  <g id="footer1" clip-path="url(#clip-footer1)">
+    <g id="Grupo_41" data-name="Grupo 41" transform="translate(0 -6997.807)">
+      <g id="Grupo_19" data-name="Grupo 19" transform="translate(-35 7111.807)">
+        <path id="Caminho_1" data-name="Caminho 1" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-35.51 411.336)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_14" data-name="Caminho 14" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(322.554 409.578)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_3" data-name="Caminho 3" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-753 413.104)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_2" data-name="Caminho 2" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-394.55 411.926)" fill="none" stroke="#150069" stroke-width="48"/>
+      </g>
+      <g id="Grupo_20" data-name="Grupo 20" transform="translate(-34.591 7065.807)">
+        <path id="Caminho_1-2" data-name="Caminho 1" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-35.51 411.336)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_14-2" data-name="Caminho 14" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(322.554 409.578)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_3-2" data-name="Caminho 3" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-753 413.104)" fill="none" stroke="#150069" stroke-width="48"/>
+        <path id="Caminho_2-2" data-name="Caminho 2" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-394.55 411.926)" fill="none" stroke="#150069" stroke-width="48"/>
+      </g>
+      <rect id="Retângulo_20" data-name="Retângulo 20" width="1366" height="711" transform="translate(0 7126)" fill="#150069"/>
+    </g>
+  </g>
+</svg>
