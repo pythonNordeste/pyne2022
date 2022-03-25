@@ -547,6 +547,7 @@ div#patrocinadores a img.vinta {
     display: none;
     flex-direction: column;
     justify-content: space-around;
+    z-index: -1;
 }
 
 img.nordeste_noturno,
@@ -691,7 +692,7 @@ div#mensagem-sucesso {
         transform: translate(80%, -50%);
     }
     .mw-main {
-        max-width: 800px;
+        max-width: 1024px;
         margin: auto;
     }
     h1 {
@@ -768,7 +769,7 @@ div#mensagem-sucesso {
         padding: 0 5em 3em;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1800px) {
     .decorations {
         display: flex
     }
