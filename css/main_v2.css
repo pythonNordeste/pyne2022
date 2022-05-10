@@ -57,6 +57,10 @@ body {
     background-color: #EEEEEE;
 }
 
+a {
+    color: #000;
+}
+
 body.noturno {
     background-color: #000000;
 }
@@ -115,6 +119,15 @@ h1 {
 
 p {
     line-height: 1.5em;
+}
+
+.rainbow-text {
+    border-width: 3px;
+    border-style: solid;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-image: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) 1 1 100%;
 }
 
 body.noturno p,
@@ -414,6 +427,7 @@ button#next {
     float: right;
   }
 
+
 section#patrocinio a.padrao,
 section#coc a.padrao {
     margin: 2em auto;
@@ -628,6 +642,7 @@ body.noturno div#rabo svg path {
 
 div#rabo svg {
     margin-left: -100px;
+    height: auto !important;
 }
 
 div#mensagem-sucesso {
@@ -750,6 +765,15 @@ div#mensagem-sucesso {
 /* @media (min-width: 1024px) {
 } */
 @media (min-width: 1200px) {
+    section p {
+        font-size: 1.3em;
+        text-align: justify;
+        line-height: 1.7em;
+    }
+    #coc ul > li {
+        line-height: 1.5em;
+        font-size: 1.2em;
+    }
     .items .button-container {
         width: 45%;
     }
