@@ -312,17 +312,21 @@ body.noturno button.padrao:hover, body.noturno a.padrao:hover  {
     text-transform: uppercase;
 }
 
-div#slide-wrapper {
+div.slide-wrapper {
     position: relative;
     min-height: 300px;
 }
 
-div#slide-wrapper #slide {
+section#sobre .slide-wrapper {
+    margin-bottom: 50px;
+}
+
+div.slide-wrapper #slide {
     padding: 0 2em;
     width: 100%;
 }
 
-div#slide-wrapper svg {
+div.slide-wrapper svg {
     width: 40px
 }
 
@@ -341,6 +345,10 @@ button#previous {
 
 button#next {
     right: -1em;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .items {
@@ -363,7 +371,6 @@ button#next {
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
-    cursor: pointer;
   }
   
   .item img {
@@ -573,11 +580,6 @@ section#sobre {
     margin-bottom: 3em;
 }
 
-section#sobre img {
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
 body.noturno footer .footer-wrapper {
     background: #007ED3
 }
@@ -594,6 +596,7 @@ div#cobracaju {
     margin: 6em 0 0;
     width: calc(100% + 75px);
     margin-left: -35px;
+    min-height: 400px;
 }
 
 div#mapa,
@@ -650,6 +653,63 @@ div#mensagem-sucesso {
     font-size: 16px;
     min-height: 100px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 70px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 11;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  #modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0 60px;
+    height: 35px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+section#sobre img.main {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
 
 /* @media (min-width: 576px) {
 } */
@@ -791,6 +851,9 @@ div#mensagem-sucesso {
     }
     footer .linha {
         padding: 0 5em 3em;
+    }
+    div#cobracaju {
+        min-height: 650px;
     }
 }
 @media (min-width: 1800px) {
