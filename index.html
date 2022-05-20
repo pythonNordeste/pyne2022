@@ -11,22 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>PyNE22 | Python Nordeste 2022 - Aracaju, SE</title>
-    <meta name="title" content="PyNE22 | Python Nordeste 2022 - Aracaju, SE">
-    <meta name="description" content="A edição da Python Nordeste da diversidade e inclusão. Nos vemos logo logo!">
+    <title>PyNE22 | Python Nordeste - 2022 | Aracaju - SE, Brasil | 26, 27 e 28 de Agosto</title>
+    <meta name="title" content="PyNE22 | Python Nordeste - 2022 | Aracaju - SE, Brasil | 26, 27 e 28 de Agosto">
+    <meta name="description" content="A edição da Python Nordeste da diversidade e inclusão. Da comunidade, para a comunidade.">
 
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://2022.pythonbrasil.org.br/">
-    <meta property="og:title" content="PyNE22 | Python Nordeste 2022 - Aracaju, SE">
-    <meta property="og:description" content="A edição da Python Nordeste da diversidade e inclusão. Nos vemos logo logo!">
+    <meta property="og:title" content="PyNE22 | Python Nordeste - 2022 | Aracaju - SE, Brasil | 26, 27 e 28 de Agosto">
+    <meta property="og:description" content="A edição da Python Nordeste da diversidade e inclusão. Da comunidade, para a comunidade.">
     <meta property="og:image" content="img/miniatura_website.jpg">
 
     <!-- Twitter Meta Tags -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://2022.pythonbrasil.org.br/">
-    <meta property="twitter:title" content="PyNE22 | Python Nordeste 2022 - Aracaju, SE">
-    <meta property="twitter:description" content="A edição da Python Nordeste da diversidade e inclusão. Nos vemos logo logo!">
+    <meta property="twitter:title" content="PyNE22 | Python Nordeste - 2022 | Aracaju - SE, Brasil | 26, 27 e 28 de Agosto">
+    <meta property="twitter:description" content="A edição da Python Nordeste da diversidade e inclusão. Da comunidade, para a comunidade.">
     <meta property="twitter:image" content="img/miniatura_website.jpg">
 
     <!-- Icons -->
@@ -50,9 +50,10 @@
     <!-- Fonts / Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Saira:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
+    <!-- TODO: Minificar stylesheets -->
+    <link rel="stylesheet" href="css/main.min.css">
 
     <script>console.log("\nPython Nordeste 2022\n\nPessoas > Tecnologia\n✊🏿✊🏾✊🏽✊✊🏼✊🏻 🏳️‍🌈🏳️‍⚧️♿\n ")</script>
     
@@ -65,45 +66,398 @@
         gtag('config', 'G-L0X42JQJ9N');
     </script>
 </head>
-<body>
-    <main>
-        <div id="decoration-left" class="decorations">
-            <img src="img/l_fita1.png" alt="Fita Vermelha" id="left-ribbon1">
-            <img src="img/l_fita2.png" alt="Fitas Azul e Amarela" id="left-ribbon2">
-        </div>
-        <div id="decoration-right" class="decorations">
-            <img src="img/r_fita1.png" alt="Fita Amarela" id="right-ribbon1">
-            <img src="img/r_fita2.png" alt="Fita Azul e Vermelha" id="right-ribbon2">
-            <img src="img/r_fita3.png" alt="Fita Verde" id="right-ribbon3">
-        </div>
-
-        <div id="main-wrapper">
-            <div style="width: 200px" id="cobracaju"></div>
+<body class="">
     
-            <div class="main-description text-center">
-                <h1 id="main-title" class="main-font-family">PyNE <span class="year">2022</span></h1>
-                <h4>
-                    A edição da Python Nordeste<br/>da <span class="rainbow-text">diversidade e inclusão</span>.
-                </h4>
-                <h2>Nos vemos logo logo!</h2>
-                <div class="social-media display-center">
-                    <a href="https://www.instagram.com/pythonnordeste/"><img src="img/instagram.svg" alt="Instagram" width="30px"></a>
-                    <a href="https://twitter.com/pythonnordeste"><img src="img/twitter-black.svg" alt="Twitter" width="30px"></a>
+    <div id="decoration-left" class="decorations" role="img" aria-label="Bandeirolas flutuando">
+        <img src="img/l_fita1.png" alt="Fita Vermelha" id="left-ribbon1">
+        <img src="img/l_fita2.png" alt="Fitas Azul e Amarela" id="left-ribbon2">
+    </div>
+    <div id="decoration-right" class="decorations" role="img" aria-label="Bandeirolas flutuando">
+        <img src="img/r_fita1.png" alt="Fita Amarela" id="right-ribbon1">
+        <img src="img/r_fita2.png" alt="Fita Azul e Vermelha" id="right-ribbon2">
+        <img src="img/r_fita3.png" alt="Fita Verde" id="right-ribbon3">
+    </div>
+
+    <navbar>
+        <ul>
+            <li>
+                <a href="#intro">
+                    <span>início</span>
+                    <svg role="img" aria-label="Bandeirola" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 164">
+                        <defs>
+                          <clipPath id="clip-vermelha">
+                            <rect width="147" height="134"/>
+                          </clipPath>
+                        </defs>
+                        <g id="vermelha" clip-path="url(#clip-vermelha)">
+                          <path id="Subtração_9" data-name="Subtração 9" d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#d70800"/>
+                        </g>
+                      </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#coc" class="coc">
+                    <span>código de<br/>conduta</span>
+                    <svg role="img" aria-label="Bandeirola" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 164">
+                        <defs>
+                        <clipPath id="clip-amarela">
+                            <rect width="147" height="134"/>
+                        </clipPath>
+                        </defs>
+                        <g id="amarela" clip-path="url(#clip-amarela)">
+                        <path id="Subtração_10" data-name="Subtração 10" d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#ffc900"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#patrocinio" class="patrocinio">
+                    <span>patrocínio</span>
+                    <svg role="img" aria-label="Bandeirola" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 164">
+                        <defs>
+                        <clipPath id="clip-verde">
+                            <rect width="147" height="134"/>
+                        </clipPath>
+                        </defs>
+                        <g id="verde" clip-path="url(#clip-verde)">
+                        <path id="Subtração_10" data-name="Subtração 10" d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#00923f"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#sobre" class="sobre">
+                    <span>sobre</span>
+                    <svg role="img" aria-label="Bandeirola" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 164">
+                        <defs>
+                        <clipPath id="clip-azul">
+                            <rect width="147" height="134"/>
+                        </clipPath>
+                        </defs>
+                        <g id="azul" clip-path="url(#clip-azul)">
+                        <path id="Subtração_10" data-name="Subtração 10" d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#150069"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <button id="btnDarkmode" type="button">
+                    <img src="img/lampada_preta.png" alt="Lâmpada Preta" id="lampada-preta">
+                    <img src="img/lampada_branca.png" alt="Lâmpada Branca" id="lampada-branca">
+                </button>
+            </li>
+        </ul>
+    </navbar>
+
+    <main class="mw-main">
+        <header class="w-100">
+            <div id="cobracaju" role="img" aria-label="Cobra python azul enrolada em um caju amarelo e verde e animações com os textos Aracaju, Sergipe e 26, 27 e 28 Agosto"></div>
+        </header>
+        <section id="intro">
+            <div class="descricao pd-section">
+                <h1>
+                    <span class="verde">Da comunidade,</span><br/>
+                    <span class="vermelho">para a comunidade.</span> 
+                </h1>
+                <p>
+                    A Python Nordeste 2022 nasceu com a tarefa de promover o máximo de diversidade e inclusão durante os três dias do evento. 
+                   </p>
+                <p>
+                    Nossa organização, durante todo o processo de criação do evento (desde a escolha da equipe organizadora, definição do local, esquema de palestras, convites de keynotes) se preocupou ao máximo com a entrega de uma PyNE onde realmente fosse possível promover a conexão entre pessoas muito além da entrega de conhecimentos em tecnologia. 
+                </p>
+                <p>
+                    Temos muito orgulho em dizer a todas as pessoas que a PyNE22 é uma edição <b class="rainbow-text">da comunidade, para a comunidade</b>, pois, somos uma edição 100% pautada em pluralidade, diversidade, respeito e inclusão.
+                </p>
+                <p>
+                    Será um imenso prazer fazermos parte deste evento e dividir um pouco da nossa pluralidade. Esperamos todes vocês por aqui!
+                </p>
+            </div>
+        </section>
+        <div class="cauda">
+            <svg role="img" aria-label="Corpo de uma cobra azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1480" height="155" viewBox="0 0 1480 155">
+                <defs>
+                  <clipPath id="clip-corpo_da_cobra1">
+                    <rect width="1480" height="155"/>
+                  </clipPath>
+                </defs>
+                <g id="corpo_da_cobra1" clip-path="url(#clip-corpo_da_cobra1)">
+                  <g id="Grupo_38" data-name="Grupo 38" transform="translate(200 -35)">
+                    <g id="Grupo_37" data-name="Grupo 37" transform="translate(1363.556 -1089.117)">
+                      <path id="Caminho_1" data-name="Caminho 1" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1577.066 1582.453)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_14" data-name="Caminho 14" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1219.002 1580.695)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_3" data-name="Caminho 3" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-2294.556 1584.221)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_2" data-name="Caminho 2" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1936.106 1583.043)" fill="none" stroke="#150069" stroke-width="48"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+        </div>
+        <section id="geral" class="pd-section">
+            <div class="linha">
+                <div class="coluna text-center">
+                    <img src="img/nordeste.svg" class="nordeste mw-100" alt="Nordeste">
+                    <img src="img/nordeste_dark.svg" style="display: none" class="nordeste_noturno mw-100" alt="Nordeste">
+                </div>
+                <div class="coluna">
+                    <h1 class="amarelo">Sobre a<br/>Python Nordeste</h1>
+                    <p>
+                        A Python Nordeste é o <b>maior encontro da comunidade Python</b> na região. É um evento itinerante que ocorre anualmente nas cidades do Nordeste.
+                    </p>
+                    <p>
+                        Com foco na promoção da <span class="rainbow-text">diversidade</span> e troca de experiências e conhecimento, o evento é voltado para indivíduos de diversas áreas e origens, <b>sem distinção</b> de conhecimento técnico ou atuação na área.
+                    </p>
                 </div>
             </div>
+            <p>
+                O encontro visa difundir a linguagem entre universidades, empresas, instituições da sociedade civil e indivíduos em busca de novos conhecimentos, promovendo assim a difusão da cultura do Software Livre e o estímulo ao desenvolvimento na Região Nordeste.
+            </p>
+        </section>
+        <div class="cauda">
+            <svg role="img" aria-label="Corpo de uma cobra azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1480" height="155" viewBox="0 0 1480 155">
+                <defs>
+                  <clipPath id="clip-corpo_da_cobra1">
+                    <rect width="1480" height="155"/>
+                  </clipPath>
+                </defs>
+                <g id="corpo_da_cobra1" clip-path="url(#clip-corpo_da_cobra1)">
+                  <g id="Grupo_38" data-name="Grupo 38" transform="translate(200 -35)">
+                    <g id="Grupo_37" data-name="Grupo 37" transform="translate(1363.556 -1089.117)">
+                      <path id="Caminho_1" data-name="Caminho 1" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1577.066 1582.453)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_14" data-name="Caminho 14" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1219.002 1580.695)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_3" data-name="Caminho 3" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-2294.556 1584.221)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_2" data-name="Caminho 2" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1936.106 1583.043)" fill="none" stroke="#150069" stroke-width="48"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
         </div>
-        
-        <script src="lottie_light.min.js"></script>
-        <script>
-            bodymovin.loadAnimation({
-                container: document.getElementById('cobracaju'),
-                path: 'cobracaju.json',
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                name: "Cobra Caju",
-            })
-        </script>
+        <section id="patrocinio">
+            <h1 class="verde text-center">
+                Patrocínio
+            </h1>
+            <p class="text-center">
+                Baixe aqui o nosso Plano de Patrocínio com<br/>as modalidades, benefícios e todas as<br/>informações que você precisa.
+            </p>
+            <div class="text-center">
+                <a href="[PT-BR] Plano de Patrocínio - PyNE 2022.pdf" target="_blank" download class="padrao text-uppercase">
+                    download em pdf
+                </a>
+            </div>
+        </section>
+        <div class="cauda">
+            <svg role="img" aria-label="Corpo e cauda de uma cobra azul" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1480" height="155" viewBox="0 0 1480 155">
+                <defs>
+                  <clipPath id="clip-corpo_da_cobra1">
+                    <rect width="1480" height="155"/>
+                  </clipPath>
+                </defs>
+                <g id="corpo_da_cobra1" clip-path="url(#clip-corpo_da_cobra1)">
+                  <g id="Grupo_38" data-name="Grupo 38" transform="translate(200 -35)">
+                    <g id="Grupo_37" data-name="Grupo 37" transform="translate(1363.556 -1089.117)">
+                      <path id="Caminho_1" data-name="Caminho 1" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1577.066 1582.453)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_14" data-name="Caminho 14" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1219.002 1580.695)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_3" data-name="Caminho 3" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-2294.556 1584.221)" fill="none" stroke="#150069" stroke-width="48"/>
+                      <path id="Caminho_2" data-name="Caminho 2" d="M1112.629-381.245s-82.343-63.75-181.374,0-178.255,0-178.255,0" transform="translate(-1936.106 1583.043)" fill="none" stroke="#150069" stroke-width="48"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+        </div>
+        <section id="coc" class="pd-section">
+            <h1 class="vermelho">
+                Código de Conduta
+            </h1>
+            <p>
+                O evento Python Brasil é um ambiente amistoso, de boa convivência, inclusivo e livre de intimidação, onde todas as pessoas são bem-vindas e a civilidade é exigida.
+            </p>
+            <p>
+                Por isso:
+                <ul>
+                    <li>
+                        Não é tolerado nenhum tipo de assédio, discriminação inapropriada ou humilhação pública;
+                    </li>
+                    <li>
+                        Não é tolerado o descumprimento das leis brasileiras;
+                    </li>
+                    <li>
+                        Toda pessoa presente no evento, independente do seu papel, está sujeita a estas regras;
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Desta forma, entendemos que:
+                <ul>
+                    <li>
+                        Assédio é a ação de insistir, perseguir ou coagir outra pessoa a um comportamento involuntário.
+                    </li>
+                    <li>
+                        Discriminação inapropriada é o ato de separar, injuriar ou humilhar alguém promovendo sua exclusão por atributo particular da mesma.
+                    </li>
+                    <li>
+                        Humilhação pública é o ato de submeter, rebaixar, ridicularizar ou promover o vexame de outro publicamente.
+                    </li>
+                    <li>
+                        O público alvo do evento também inclui crianças e adolescentes, por isso buscamos manter um ambiente apropriado para todas as faixas etárias. Sendo assim, linguagem e imagens sexualizadas não são adequados para palestras e ações promocionais de patrocinadores.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Se você se sentiu assediado, discriminado indevidamente ou humilhado, ou presenciou alguma destas atitudes, por favor entre em contato com a <a href="mailto:nordeste@python.org.br">Equipe de Resposta</a>.
+            </p>
+            <p>
+                Havendo um relato de violação destes princípios, a Equipe de Resposta realizará a devida análise e, quando necessário, tomará as ações para impedir a reincidência. Estas ações podem, mas não se restringem nem implicam em ir desde uma conversa em busca da retratação até um convite a se retirar do evento por tempo indeterminado.
+            </p>
+            <div class="text-center">
+                <a href="https://python.org.br/cdc/" class="padrao">
+                    PYTHON BRASIL CoC
+                </a>
+            </div>
+        </section>
+        <div class="rabo" id="rabo">
+        </div>
+        <section id="sobre" class="pd-section">
+            <h1 class="amarelo">
+                Sobre a PyNE 2022:
+            </h1>
+            <img src="img/tiradentes_innovation.jpg" alt="Tiradentes Innovation Center" class="main mw-100">
+            <p>
+                A PyNE este ano será sediada em Aracaju - Sergipe, a cidade que carrega o título de capital brasileira com maior qualidade de vida e com a orla mais bonita do Brasil.
+            </p>
+            <p>
+                Além disso, a cena musical sergipana conta com grandes nomes, com premiações e indicações nacionais e internacionais. Alguns de nossos grandes nomes são: Isis Broken, The Baggios, Samba do Arnesto e outros. O Estado também conta com inúmeros artistas plásticos e grupos teatrais.
+            </p>
+            <p>
+                Mas, fora as belezas naturais e a cultura regional, Aracaju conta com uma enorme produção científica, sendo referência nacional e tendo até destaques internacionais.
+            </p>
+            <p>
+                E por falar em produção científica, nosso evento ocorrerá no coração de duas das nossas instituições pioneiras em inovação e ensino do estado.
+            </p>
+            <p>
+                O <b>Tiradentes Innovation Center - TIC</b> é pioneiro no Brasil e na América Latina como Centro de Inovação voltado à Educação e conta com espaços físicos confortáveis, criativos e inovadores, que abrangem recursos tecnológicos de última geração, o TIC promove a conexão entre pessoas, startups, empresas e organizações.
+            </p>
+            <p>
+                A <b>Universidade Tiradentes – Unit –</b> é a primeira instituição de ensino superior particular criada em Sergipe, Nordeste brasileiro, há 60 anos. Em dezembro de 2018, o Google concedeu o reconhecimento mundial à Universidade Tiradentes como referência na plataforma Google for Education, pois, de forma pioneira no Brasil, a Unit investiu na estruturação de <b lang="en">learning spaces</b> e na integração de ferramentas do Google for Education ao seu sistema acadêmico – estudantes e professores interagem de qualquer lugar, a qualquer hora e de qualquer dispositivo.
+            </p>
+
+            <div class="slide-wrapper">
+                <div class="slide items w-100">
+                    <div class="item active" data-src="img/fachada_tic.jpeg">
+                        <img src="img/fachada_tic.jpeg" class="mw-100 open-modal" alt="Fachada Tiradentes Innovation Center" />
+                    </div>
+                    <div class=" item next" data-src="img/coworking.jpg">
+                        <img src="img/coworking.jpg" class="mw-100 open-modal" alt="Coworking do espaço das startups" />
+                    </div>
+                    <div class="item prev" data-src="img/fablab.jpg">
+                        <img src="img/fablab.jpg" class="mw-100 open-modal" alt="Fab Lab" />
+                    </div>
+                    <div class="item prev" data-src="img/videoconferencia">
+                        <img src="img/videoconferencia.jpg" class="mw-100 open-modal" alt="Sala de videoconferência" />
+                    </div>
+                    <div class="button-container">
+                        <button type="button" class="button">
+                            <svg role="img" aria-label="Seta amarela para esquerda" xmlns="http://www.w3.org/2000/svg" width="63.712" height="83.567" viewBox="0 0 63.712 83.567">
+                                <g id="Grupo_29" data-name="Grupo 29" transform="translate(10.482 10.482)">
+                                <line x1="42.748" y2="31.302" fill="none" stroke="#ffc900" stroke-linecap="round" stroke-width="15"/>
+                                <line x1="42.748" y1="31.302" transform="translate(0 31.302)" fill="none" stroke="#ffc900" stroke-linecap="round" stroke-width="15"/>
+                                </g>
+                            </svg>
+                        </button>
+                        <button type="button" class="button">
+                            <svg role="img" aria-label="Seta amarela para direita" xmlns="http://www.w3.org/2000/svg" width="63.712" height="83.567" viewBox="0 0 63.712 83.567">
+                                <g id="Grupo_28" data-name="Grupo 28" transform="translate(199.982 -1659.018)">
+                                <line x2="42.748" y2="31.302" transform="translate(-189.5 1669.5)" fill="none" stroke="#ffc900" stroke-linecap="round" stroke-width="15"/>
+                                <line y1="31.302" x2="42.748" transform="translate(-189.5 1700.802)" fill="none" stroke="#ffc900" stroke-linecap="round" stroke-width="15"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <div id="mapa">
+                        <iframe title="Google Maps Tiradentes Innovation Center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.944141934372!2d-37.062347384660946!3d-10.967588925750105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab12ff7ad1497%3A0x1c4037b00d89e8d6!2sTiradentes%20Innovation%20Center!5e0!3m2!1spt-BR!2sbr!4v1645155294399!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <h2 class="amarelo">
+                        Local e Data:
+                    </h2>
+                    <p>
+                        Endereço: <a href="https://g.page/tiradentesinnovation?share" target="_blank" rel="noopener noreferrer">Avenida Murilo Dantas, 300 - Bloco A - Farolândia, Aracaju - SE, 49032-490</a>.
+                    </p> 
+                    <p>
+                        O evento será realizado nos dias <strong>26, 27 e 28 de agosto de 2022</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="ondas"></div>
+            <div class="footer-wrapper">
+                <div class="linha">
+                    <div class="coluna">
+                        <h3 class="branco">
+                            Fale conosco!
+                        </h3>
+                        <div id="form">
+                            <div id="campos">
+                                <div class="campo">
+                                    <input type="email" id="email" name="email" placeholder="Seu e-mail" >
+                                </div>
+                                <div class="campo">
+                                    <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                                </div>
+                                <div class="campo">
+                                    <textarea id="msg" name="mensagem" placeholder="Digite sua mensagem..." cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="campo text-center">
+                                    <button id="enviar-form" class="text-uppercase" type="button">
+                                        enviar
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="mensagem-sucesso" class="display-none">
+                                Recebemos sua mensagem, logo entraremos em contato 😊
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna social-media">
+                        <h3 class="branco text-center">
+                            Nossas redes:
+                        </h3>
+                        <div class="text-center icones">
+                            <a href="https://www.instagram.com/pythonnordeste/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/insta.svg" alt="Instagram">
+                            </a>
+                            <a href="https://twitter.com/pythonnordeste" target="_blank" rel="noopener noreferrer">
+                                <img src="img/twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                        <div class="text-center icone">
+                            <a href="https://www.linkedin.com/company/pythonnordeste2022/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/linkedin.svg" alt="Linkedin">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <small class="cinza">
+                                PyNE22 | Python Nordeste - 2022 | Aracaju - SE, Brasil | 26, 27 e 28 de Agosto
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
+    <div id="modal" class="modal">
+        <span class="close-modal">×</span>
+        <img src="" class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script src="lottie_light.min.js"></script>
+    <script>
+        const modal=document.getElementById("modal"),modalImg=document.getElementById("modal-image"),modalCaption=document.getElementById("modal-caption");function closeModal(){modal.style.display="none",modalImg.src="",modalCaption.innerHTML=""}const closeModalElem=document.querySelectorAll(".close-modal");closeModalElem.forEach((function(e){e.onclick=closeModal})),modal.onclick=function(e){modal.isSameNode(e.target)&&"none"!=window.getComputedStyle(modal).display&&closeModal()};const slider=document.querySelector(".items"),slides=slider.querySelectorAll(".item"),button=slider.querySelectorAll(".button"),slidesImages=slider.querySelectorAll(".item img");if(slider&&slides){for(let e=0;e<slidesImages.length;e++)slidesImages[e].classList.contains("clickable")?slidesImages[e].onclick=function(e){window.location=e.target.dataset.href}:slidesImages[e].classList.contains("open-modal")&&(slidesImages[e].classList.add("cursor-pointer"),slidesImages[e].onclick=function(){modal.style.display="block",modalImg.src=this.src,modalCaption.innerHTML=this.alt});let e=Math.floor(Math.random()*slides.length),o=e>0?e-1:slides.length-1,a=e<slides.length-1?e+1:0;const n=()=>{slides.forEach((e=>{e.classList.remove("active"),e.classList.remove("prev"),e.classList.remove("next")})),slides[e].classList.add("active"),slides[o].classList.add("prev"),slides[a].classList.add("next")};for(let e=0;e<button.length;e++)button[e].addEventListener("click",(()=>0==e?t():s()));const t=()=>l(e>0?e-1:slides.length-1),s=()=>e<slides.length-1?l(e+1):l(0),l=t=>{e=t,o=e>0?e-1:slides.length-1,a=e<slides.length-1?e+1:0,n()};n()}const cobracaju=document.getElementById("cobracaju"),cobracajuObj={container:cobracaju,path:"cobracaju_main.json",renderer:"svg",loop:!1,autoplay:!0,name:"Cobra Caju"};let bodymovinInstanceCobracaju=null;const loadBodyMovinInstanceCobracaju=function(e){cobracajuObj.path=e,bodymovinInstanceCobracaju=bodymovin.loadAnimation(cobracajuObj)},callLoadFunction=function(){cobracaju.innerHTML="";let e="";var o;window.innerWidth<768?(console.log("alterando logo para mobile..."),e="cobracaju_mobile.json",document.body.classList.contains("noturno")&&(e="cobracaju_mobile_darkmode.json")):(console.log("alterando logo para desktop..."),e="cobracaju_main.json",document.body.classList.contains("noturno")&&(e="cobracaju_main_darkmode.json")),o=e,cobracajuObj.path=o,bodymovinInstanceCobracaju=bodymovin.loadAnimation(cobracajuObj)};callLoadFunction();let resizeInternval=null;window.addEventListener("resize",(function(){clearTimeout(resizeInternval),resizeInternval=setTimeout(callLoadFunction,100)}),!0);const raboCobracaju=document.getElementById("rabo"),raboCobracajuObj={container:raboCobracaju,path:"rabo.json",renderer:"svg",loop:!0,autoplay:!0,name:"Rabo da Cobra Caju"};let bodymovinInstanceRabo=null;const loadRaboCobracaju=function(){raboCobracaju.innerHTML="",bodymovinInstanceRabo=bodymovin.loadAnimation(raboCobracajuObj)};raboCobracaju.innerHTML="",bodymovinInstanceRabo=bodymovin.loadAnimation(raboCobracajuObj);const btnDarkmode=document.getElementById("btnDarkmode");btnDarkmode.addEventListener("click",(function(e){e.preventDefault(),document.body.classList.toggle("noturno"),callLoadFunction()}));const divCampos=document.getElementById("campos"),divMsgForm=document.getElementById("mensagem-sucesso"),btnForm=document.getElementById("enviar-form"),msgTextarea=document.getElementById("msg"),emailInput=document.getElementById("email"),assuntoInput=document.getElementById("assunto");btnForm.addEventListener("click",(function(e){e.preventDefault(),btnForm.disabled=!0;let o=!0;const a={};if(a.assunto=assuntoInput.value?.trim(),a.mensagem=msgTextarea.value?.trim(),a.email=emailInput.value?.trim(),a.email?.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)?emailInput.classList.remove("error"):(emailInput.classList.add("error"),o=!1),a.assunto?assuntoInput.classList.remove("error"):(assuntoInput.classList.add("error"),o=!1),a.mensagem?msgTextarea.classList.remove("error"):(msgTextarea.classList.add("error"),o=!1),o){console.log("Enviando e-mail...");var n=new XMLHttpRequest;n.open("POST","https://script.google.com/macros/s/AKfycbwstFWAQ-mk9nXoTJPOBOClAlcRbnUwmzNlXUdwp0f1Nonps1hVG_W2hrlkm394XmO67A/exec"),n.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(console.log("E-mail enviado."),divCampos.classList.add("display-none"),divMsgForm.classList.remove("display-none"))};var t=Object.keys(a).map((function(e){return encodeURIComponent(e)+"="+encodeURIComponent(a[e])})).join("&");n.send(t)}else btnForm.disabled=!1}));
+    </script>
 </body>
 </html>
