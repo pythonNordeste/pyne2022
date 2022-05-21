@@ -82,6 +82,10 @@ h1, h2 {
     color: #ffc900
 }
 
+.amarelo-escuro {
+    color: #e6b500
+}
+
 .vermelho {
     color: #d70800
 }
@@ -93,6 +97,10 @@ body.noturno
 
 .branco {
     color: #ffff
+}
+
+.preto {
+    color: #000
 }
 
 .cinza {
@@ -151,6 +159,15 @@ navbar ul {
     display: flex;
     list-style-type: none;
     display: flex;
+    padding: 0
+}
+
+navbar#extra {
+    top: 80px;
+}
+
+navbar#extra ul {
+    float: right;
 }
 
 navbar ul li a {
@@ -630,11 +647,11 @@ body ul li button#btnDarkmode img {
     width: 50px;
 }
 
-body.noturno g#vermelha path {
+body.noturno g.vermelha path {
     fill: #D70086;
 }
 
-body.noturno g#azul path,
+body.noturno g.azul path,
 body.noturno div#rabo svg path {
     fill: #007ED3;
     stroke: #007ED3;
@@ -714,13 +731,26 @@ section#sobre img.main {
     border-bottom-left-radius: 30px;
 }
 
+.display-sm {
+    display: block
+}
+.display-md {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .cauda svg {
         max-width: 600px;
     }
+    navbar#extra ul li a svg {
+        max-height: 80px;
+    }
 }
-/* @media (min-width: 576px) {
-} */
+@media (min-width: 576px) {
+    navbar#extra {
+        top: 90px;
+    }
+}
 @media (min-width: 768px) {
     .coluna {
         flex: 0 0 auto;
@@ -762,6 +792,12 @@ section#sobre img.main {
     }
     footer .ondas {
         height: 140px;
+    }
+    .display-sm {
+        display: none
+    }
+    .display-md {
+        display: block;
     }
 }
 @media (min-width: 992px) {
