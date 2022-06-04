@@ -286,7 +286,7 @@ button#enviar-form,
 button.padrao, a.padrao {
     border: none;
     border-radius: 20px;
-    padding: 13px 1.5em;
+    padding: 10px 1.5em;
     box-shadow: 0 5px 3px rgb(0 0 0 / 19%);
     font-weight: 600;
     font-family: 'Roboto';
@@ -299,6 +299,42 @@ button.padrao, a.padrao {
 button.padrao, a.padrao {
     background: #D70800;
     color: #fff;
+    border: 3px solid #D70800;
+}
+
+button.padrao:hover, a.padrao:hover  {
+    background: #af0600;
+    border-color: #af0600;
+}
+
+body.noturno button.padrao, body.noturno a.padrao  {
+    background: #D70086;
+    box-shadow: 0 5px 3px rgba(255, 255, 255, 0.19);
+    border: 3px solid #D70086;
+}
+
+body.noturno button.padrao:hover, body.noturno a.padrao:hover  {
+    background: #a70168;
+    border-color: #a70168;
+}
+
+button.padrao.light, a.padrao.light {
+    background: #fff;
+    color: #D70800;
+    border: 3px solid #D70800;
+}
+
+body.noturno button.padrao.light, body.noturno a.padrao.light {
+    background: #fff;
+    color: #D70086;
+    border: 3px solid #D70086;
+    box-shadow: 0 5px 3px rgba(255, 255, 255, 0.19);
+}
+
+button.padrao.light:hover, a.padrao.light:hover,
+body.noturno button.padrao.light:hover, body.noturno a.padrao.light:hover {
+    background: #fff;
+    opacity: .6;
 }
 
 button#enviar-form {
@@ -315,18 +351,6 @@ body.noturno button#enviar-form {
 button#enviar-form:disabled {
     opacity: .5;
     cursor: wait;
-}
-
-button.padrao:hover, a.padrao:hover  {
-    background: #af0600;
-}
-
-body.noturno button.padrao, body.noturno a.padrao {
-    background: #D70086;
-}
-
-body.noturno button.padrao:hover, body.noturno a.padrao:hover  {
-    background: #a70168;
 }
 
 .text-uppercase {
