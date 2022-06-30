@@ -480,11 +480,22 @@ button#next {
   }
 
 
-section#patrocinio a.padrao,
+section#patrocinio div.planos a.padrao,
 section#coc a.padrao {
     margin: 2em auto;
     max-width: 200px;
 }
+section#patrocinio div#patrocinadores a {
+    flex: 0 0 auto;
+    width: calc(100% - 10px);
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
+section#patrocinio div#patrocinadores img {
+    max-height: 150px;
+} 
 
 footer .campo input, footer .campo textarea {
     font-family: 'Roboto';
@@ -532,16 +543,8 @@ div#patrocinadores a {
 }
 
 div#patrocinadores a img {
-    max-width: 230px;
+    max-width: 150px;
     margin-bottom: 2em;
-}
-
-div#patrocinadores a img.evolux {
-    max-width: 170px;
-}
-
-div#patrocinadores a img.vinta {
-    max-width: 120px;
 }
 
 #coc ul {
@@ -774,6 +777,12 @@ section#sobre img.main {
     navbar#extra {
         top: 90px;
     }
+    section#patrocinio div#patrocinadores a {
+        width: calc(50% - 10px);
+    }
+    section#patrocinio div#patrocinadores img {
+        max-width: 267px;
+    } 
 }
 @media (min-width: 768px) {
     .coluna {
@@ -857,18 +866,6 @@ section#sobre img.main {
     section#patrocinio a.padrao, section#coc a.padrao {
         margin: 3em auto 2em;
     }
-    div#patrocinadores a img {
-        max-width: 350px;
-        margin-bottom: 3em;
-    }
-
-    div#patrocinadores a img.evolux {
-        max-width: 250px;
-    }
-    
-    div#patrocinadores a img.vinta {
-        max-width: 170px;
-    }
     .items .item {
         width: 350px;
         height: 200px;
@@ -888,6 +885,9 @@ section#sobre img.main {
     }
     navbar ul li a.coc span {
         font-size: 12px;
+    }
+    section#patrocinio div#patrocinadores a {
+        width: calc(33.3333333% - 10px);
     }
 }
 /* @media (min-width: 1024px) {
