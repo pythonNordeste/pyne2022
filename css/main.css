@@ -496,6 +496,11 @@ section#patrocinio div#patrocinadores a {
 section#patrocinio div#patrocinadores img {
     max-height: 150px;
 } 
+body.noturno section#patrocinio div#patrocinadores img {
+    background: rgb(255 255 255);
+    padding: 5px;
+    border-radius: 10px;
+}
 
 footer .campo input, footer .campo textarea {
     font-family: 'Roboto';
