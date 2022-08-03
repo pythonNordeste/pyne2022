@@ -782,6 +782,16 @@ section#sobre img.main {
     display: none;
 }
 
+img:not([src]) {
+    visibility: hidden;
+}
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+    img:-moz-loading {
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 480px) {
     .cauda svg {
         max-width: 600px;
