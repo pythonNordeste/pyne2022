@@ -69,9 +69,13 @@ body.noturno {
     background-color: #000000;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Rowdies', cursive;
     font-weight: 300;
+}
+
+h4 {
+    font-size: 1.2em;
 }
 
 .verde {
@@ -127,6 +131,10 @@ h1 {
 
 .text-center {
     text-align: center;
+}
+
+.margin-auto {
+    margin: auto;
 }
 
 p {
@@ -493,6 +501,9 @@ section#patrocinio div#patrocinadores a {
     justify-content: center;
     display: flex;
 } 
+div#patrocinadores a {
+    display: block;
+}
 section#patrocinio div#patrocinadores img {
     max-height: 150px;
 } 
@@ -500,6 +511,16 @@ body.noturno section#patrocinio div#patrocinadores img {
     background: rgb(255 255 255);
     padding: 5px;
     border-radius: 10px;
+}
+section#patrocinio div#patrocinadores #diamante a img {
+    max-width: 267px;
+}
+section#patrocinio div#patrocinadores #ouro a img {
+    max-width: 215px;
+}
+div#patrocinadores .menor a img {
+    max-width: 130px;
+    margin-bottom: 2em;
 }
 
 footer .campo input, footer .campo textarea {
@@ -540,15 +561,6 @@ footer .campo textarea {
 }
 
 .text-center.icone {
-    margin-bottom: 2em;
-}
-
-div#patrocinadores a {
-    display: block;
-}
-
-div#patrocinadores a img {
-    max-width: 150px;
     margin-bottom: 2em;
 }
 
@@ -783,11 +795,8 @@ section#sobre img.main {
         top: 90px;
     }
     section#patrocinio div#patrocinadores a {
-        width: calc(50% - 10px);
+        width: calc(33.3333333% - 10px);
     }
-    section#patrocinio div#patrocinadores img {
-        max-width: 267px;
-    } 
 }
 @media (min-width: 768px) {
     .coluna {
@@ -861,6 +870,9 @@ section#sobre img.main {
     h3 {
         font-size: 2.5em;
     }
+    h4 {
+        font-size: 2em;
+    }
     .social-media img {
         width: 70px;
     }
@@ -892,7 +904,7 @@ section#sobre img.main {
         font-size: 12px;
     }
     section#patrocinio div#patrocinadores a {
-        width: calc(33.3333333% - 10px);
+        width: calc(25% - 10px);
     }
 }
 /* @media (min-width: 1024px) {
