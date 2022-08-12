@@ -792,6 +792,190 @@ img:not([src]) {
     }
 }
 
+/*
+agenda
+*/
+section#agenda li a {
+    text-decoration: none;
+}
+.nav-pills {
+    background: #554bb9;
+    display: inline-block;
+    -moz-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    padding: 0
+  }
+  .nav-pills li:nth-child(2) {
+    background: #ff8a00;
+  }
+  .nav-pills li:nth-child(3) {
+        background: #00b9ff;
+    }
+  .nav-pills li a h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .nav-pills li a p {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.0999999999999996rem;
+    font-weight: 300;
+    margin: 0;
+    color: #fff;
+    opacity: .7;
+  }
+  .nav-pills .active {
+    position: relative;
+    border-radius: 0;
+    background: transparent;
+  }
+  .nav-pills .active a:focus,
+  .nav-pills .active a:hover {
+    background: transparent;
+    margin-right: .6rem;
+  }
+  .nav-pills .active a {
+    background: transparent;
+    border-radius: 0;
+  }
+  .nav-pills .active a h3 {
+    color: #efa506;
+  }
+  .nav-pills li {
+    flex: 1;
+    padding: 5px;
+    float: none;
+    list-style: none;
+  }
+  .nav-pills li a {
+    padding: 1rem 2rem;
+  }
+  .nav-pills li a h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    line-height: 3rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .nav-pills li a p {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.0999999999999996rem;
+    font-weight: 300;
+    margin: 0;
+    color: #fff;
+    opacity: .7;
+  }
+  .nav-pills .active::before {
+    top: auto;
+    right: 47%;
+    bottom: -30px;
+  }
+
+  .panel-group .panel + .panel {
+    margin-top: 0;
+  }
+  .panel-group {
+    margin-bottom: 0;
+  }
+  .panel-group .panel {
+    background: rgba(255, 255, 255, 0.85);
+    margin-bottom: 5px;
+    border-radius: 16px;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
+    -moz-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
+    box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
+  }
+
+  .lgx-single-schedule {
+    display: flex;
+    padding: 2rem 1.5rem;
+  }
+  .lgx-single-schedule .author {
+    max-width: 100px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  .lgx-single-schedule .author img {
+    border-radius: 50%;
+    margin-bottom: .4rem;
+    border: 2px solid #efa506;
+  }
+  .lgx-single-schedule .author-multi img {
+    width: 48%;
+    margin-right: 1%;
+    float: left;
+  }
+  .lgx-single-schedule .schedule-info {
+    width: 100%;
+    background: #fff;
+    padding: 2.6rem 3rem;
+    border-radius: 8px;
+  }
+  .lgx-single-schedule .schedule-info .time {
+    background: rgba(239, 165, 6, 0.1);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: .2rem 1rem;
+    margin-bottom: .5rem;
+    border-radius: 25px;
+  }
+  .lgx-single-schedule .schedule-info .time span {
+    color: #efa506;
+  }
+  .lgx-single-schedule .schedule-info .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+    font-size: 2.6rem;
+    line-height: 3.9000000000000004rem;
+    font-weight: 900;
+    line-height: 3.4rem;
+    margin: 0;
+  }
+  .lgx-single-schedule .schedule-info .author-info {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .lgx-single-schedule .schedule-info .author-info span {
+    color: #ec398b;
+  }
+
+/* 
+\agenda
+*/
+
 @media (max-width: 480px) {
     .cauda svg {
         max-width: 600px;
