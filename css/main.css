@@ -94,9 +94,48 @@ h4 {
     color: #d70800
 }
 
+.laranja-escuro {
+    color: #e75a00
+}
+
+.bg-verde {
+    background-color: #00923f
+}
+
+.bg-amarelo {
+    background-color: #ffc900
+}
+
+.bg-amarelo-escuro {
+    background-color: #e6b500
+}
+
+.bg-vermelho {
+    background-color: #d70800
+}
+
+.bg-azul {
+    background-color: #150069
+}
+
+
+.bg-laranja-escuro {
+    background-color: #e75a00
+}
+
 body.noturno 
 .vermelho {
     color: #D70086
+}
+
+body.noturno 
+.bg-vermelho {
+    background-color: #D70086
+}
+
+body.noturno 
+.bg-azul {
+    background-color: #007ED3
 }
 
 .branco {
@@ -798,178 +837,232 @@ agenda
 section#agenda li a {
     text-decoration: none;
 }
-.nav-pills {
-    background: #554bb9;
+#nav-agenda {
     display: inline-block;
     -moz-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
     box-shadow: 0 13px 35px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 0 5px;
     display: flex;
-    padding: 0
+    padding: 0 ;
   }
-  .nav-pills li:nth-child(2) {
-    background: #ff8a00;
+  #nav-agenda li:not(.active) {
+    background: rgb(119, 119, 119);
   }
-  .nav-pills li:nth-child(3) {
-        background: #00b9ff;
-    }
-  .nav-pills li a h3 {
-    font-size: 20px;
-    line-height: 30px;
+  #nav-agenda li a h3 {
     font-size: 2rem;
-    line-height: 3rem;
     font-weight: 400;
-    line-height: 2.6rem;
     color: #fff;
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 1px;
   }
-  .nav-pills li a p {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.0999999999999996rem;
+  #nav-agenda li a p {
+    font-size: 1.2rem;
+    line-height: 2rem;
     font-weight: 300;
     margin: 0;
     color: #fff;
-    opacity: .7;
   }
-  .nav-pills .active {
+  #nav-agenda .active {
     position: relative;
-    border-radius: 0;
-    background: transparent;
+    background: #e75a00;
   }
-  .nav-pills .active a:focus,
-  .nav-pills .active a:hover {
-    background: transparent;
+  #nav-agenda .active a:focus,
+  #nav-agenda .active a:hover {
     margin-right: .6rem;
   }
-  .nav-pills .active a {
-    background: transparent;
-    border-radius: 0;
-  }
-  .nav-pills .active a h3 {
-    color: #efa506;
-  }
-  .nav-pills li {
+  #nav-agenda li {
     flex: 1;
     padding: 5px;
     float: none;
     list-style: none;
   }
-  .nav-pills li a {
+  #nav-agenda li:first-child,
+  #nav-agenda li:nth-child(2) {
+    border-right: 5px solid #ececec;
+  }
+  body.noturno #nav-agenda li:first-child,
+  body.noturno #nav-agenda li:nth-child(2) {
+    border-right: 5px solid #000;
+  }
+  #nav-agenda li a {
     padding: 1rem 2rem;
   }
-  .nav-pills li a h3 {
-    font-size: 20px;
-    line-height: 30px;
-    font-size: 20px;
-    line-height: 3rem;
-    font-weight: 400;
-    line-height: 2.6rem;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 1px;
-  }
-  .nav-pills li a p {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.0999999999999996rem;
-    font-weight: 300;
-    margin: 0;
-    color: #fff;
-    opacity: .7;
-  }
-  .nav-pills .active::before {
+  #nav-agenda .active::before {
     top: auto;
     right: 47%;
     bottom: -30px;
   }
 
+  div#tab-panel-agenda {
+    padding: 1rem 5px 3rem 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-bottom: 3rem;
+  }
   .panel-group .panel + .panel {
     margin-top: 0;
   }
   .panel-group {
-    margin-bottom: 0;
-  }
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
   .panel-group .panel {
-    background: rgba(255, 255, 255, 0.85);
-    margin-bottom: 5px;
-    border-radius: 16px;
-    -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
-    -moz-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
-    box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.1);
+    background: #fff;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.5);
+    box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.5);
+    width: calc(25% - 5px);
+    flex: 0 0 auto;
+    margin-left: 5px;
   }
+  .panel-group .panel.full {
+    width: 100%;
+  }
+  .panel-group .panel.full .single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    flex-wrap: wrap;
+    padding: 1rem 0 2rem
+}
+.panel-group .panel.full .single h4{
+  margin: 0;
+  font-size: 1.3rem;
+}
 
   .lgx-single-schedule {
     display: flex;
-    padding: 2rem 1.5rem;
+    padding: 10px 10px 30px;
+    min-height: 150px;
   }
   .lgx-single-schedule .author {
-    max-width: 100px;
+    max-width: 80px;
     margin-right: 1rem;
     margin-top: 2rem;
+    text-align: center;
   }
   .lgx-single-schedule .author img {
     border-radius: 50%;
-    margin-bottom: .4rem;
-    border: 2px solid #efa506;
+  }
+  .lgx-single-schedule .author-multi {
+    margin-right: 10px;
   }
   .lgx-single-schedule .author-multi img {
-    width: 48%;
-    margin-right: 1%;
-    float: left;
+    width: 75%;
   }
+  .panel-group .panel.full .lgx-single-schedule .author,
+  .panel-group .panel.full .lgx-single-schedule .author-multi {
+        max-width: 200px;
+        margin: 2rem 1rem 0;
+    }
+    .panel-group .panel.full .lgx-single-schedule .author-multi {
+          display: flex;
+          flex-wrap: wrap;
+      }
+    .panel-group .panel.full .lgx-single-schedule .author-multi img {
+        width: calc(50% - 5px);
+        margin: 0 5px 5px 0;
+    }
   .lgx-single-schedule .schedule-info {
     width: 100%;
     background: #fff;
-    padding: 2.6rem 3rem;
+    padding: 20px 13px;
     border-radius: 8px;
   }
+  .panel-group .panel.full .single h5 span,
   .lgx-single-schedule .schedule-info .time {
     background: rgba(239, 165, 6, 0.1);
-    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4000000000000004rem;
-    font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
     margin: 0;
-    padding: .2rem 1rem;
+    padding: 5px 10px;
     margin-bottom: .5rem;
     border-radius: 25px;
-  }
-  .lgx-single-schedule .schedule-info .time span {
-    color: #efa506;
+    font-weight: 100;
   }
   .lgx-single-schedule .schedule-info .title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    line-height: 39px;
-    font-size: 2.6rem;
-    line-height: 3.9000000000000004rem;
-    font-weight: 900;
-    line-height: 3.4rem;
+    font-size: 18px;
+    font-weight: 500;
     margin: 0;
   }
-  .lgx-single-schedule .schedule-info .author-info {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4000000000000004rem;
+  .panel-group .panel h4 {
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 0;
   }
-  .lgx-single-schedule .schedule-info .author-info span {
-    color: #ec398b;
+  .panel-group .panel h4 span {
+    color: #ac006a;
+  }
+  #tab-panel-agenda .tab-pane {
+    display: none;
+  }
+  #tab-panel-agenda .tab-pane.active {
+    display: block;
+  }
+.panel-group .panel .location {
+    padding: 10px 0 10px 10px;
+}
+.panel-group .panel .location a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+.panel-group .panel .location strong {
+    margin-right: 5px;
+}
+.panel-group .panel.full .single h5 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: none;
+}
+.panel-group .panel.full .single h5 span {
+  text-transform: none;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1199px) {
+    #nav-agenda {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+    #nav-agenda li {
+      flex: 1;
+      float: none;
+    }
+    #nav-agenda li a {
+      padding: 1rem ;
+    }
+    #nav-agenda .active::before {
+      display: none;
+    }
+    .lgx-tab-vertical .lgx-nav {
+      width: auto;
+    }
+    #nav-agenda li {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    #nav-agenda li:first-child, #nav-agenda li:nth-child(2) {
+        border-right: none;
+        border-bottom: 5px solid #ececec;
+    }
+    .panel-group .panel {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    div#tab-panel-agenda {
+        padding: 1rem 0 3rem 0;
+    }
   }
 
 /* 

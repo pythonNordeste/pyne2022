@@ -105,7 +105,7 @@
                           </clipPath>
                         </defs>
                         <g class="laranja" clip-path="url(#clip-laranja)">
-                          <path d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#ff6300"/>
+                          <path d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#e75a00"/>
                         </g>
                       </svg>
                 </a>
@@ -176,7 +176,7 @@
                           </clipPath>
                         </defs>
                         <g class="laranja" clip-path="url(#clip-laranja)">
-                          <path d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#ff6300"/>
+                          <path d="M147,134h0L73.5,82,0,134V0H147V134Z" fill="#e75a00"/>
                         </g>
                       </svg>
                 </a>
@@ -370,323 +370,651 @@
               </svg>
         </div>
         <section id="agenda">
-            <h1 class="verde text-center">
+            <h1 class="laranja-escuro text-center">
                 Agenda
             </h1>
-            <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
-                <li class="active"><a data-toggle="pill" href="#home"><h3>Dia 1</h3> <p class="text-center"><span>26 de Agosto</p></a></li>
-                <li><a data-toggle="pill" href="#menu1"><h3>Dia 2</h3> <p class="text-center"><span>27 de Agosto</p></a></li>
-                <li><a data-toggle="pill" href="#menu2"><h3>Dia 3</h3> <p class="text-center"><span>28 de Agosto</p></a></li>
+            <ul id="nav-agenda" class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
+                <li class="active"><a class="cursor-pointer" data-toggle="pill" data-href="#dia1"><h3>Dia 1</h3> <p class="text-center"><span>26 de Agosto</p></a></li>
+                <li><a class="cursor-pointer" data-toggle="pill" data-href="#dia2"><h3>Dia 2</h3> <p class="text-center"><span>27 de Agosto</p></a></li>
+                <li><a class="cursor-pointer" data-toggle="pill" data-href="#dia3"><h3>Dia 3</h3> <p class="text-center"><span>28 de Agosto</p></a></li>
             </ul>
-            <div class="tab-content lgx-tab-content">
-                <div id="home" class="tab-pane fade in active">
-
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <div class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Wait is Over! Stony Brook Captures Conference</h3>
-                                                <h4 class="author-info">By <span>Riaz Sagar</span> , Logichunt Inc.</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+            <div id="tab-panel-agenda" class="tab-content lgx-tab-content">
+                <div id="dia1" class="tab-pane fade in active">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel full credenciamento">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
+                            <div class="single">
+                                <h5 class="time w-100 text-center"><span><strong>14:00</strong></span></h5>
+                                <h4 class="text-uppercase w-100 text-center">início do credenciamento</h4>
                             </div>
                         </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingTwo">
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel full">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
                                 <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">10:30 <span>Am</span> - 11.30 <span>Am</span></h4>
-                                                <h3 class="title">Team With At Least Three Conference Titles</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
                                         </div>
-                                    </a>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">15:00 - 15:50</h4>
+                                            <h3 class="title">Mesa de abertura (Unit)</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
+                            
                         </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingThree">
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel full">
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
                                 <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author author-multi">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Speaker">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Speaker">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">11:30 <span>Am</span> - 01.30 <span>Pm</span></h4>
-                                                <h3 class="title">Building an Awesome Community on Your Website</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span> , Design Apple</h4>
-                                            </div>
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingfour">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">02:00 <span>Am</span> - 03.30 <span>Pm</span></h4>
-                                                <h3 class="title">Hungry Shawnee boys soccer team eyeing conference, sectional title in 2021</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">16:00 - 17:00</h4>
+                                            <h3 class="title">Como Análise de Dados com Python me ajudou a correr melhor!</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Nina da Hora</span></h4>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingfive">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker5.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">03:45 <span>Am</span> - 04.00 <span>Pm</span></h4>
-                                                <h3 class="title">Business World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div id="menu1" class="tab-pane fade">
-
-                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingOne2">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author author-multi">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Speaker">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">The Wait is Over! Stony Brook Captures First Conference Title</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span> , Design Apple</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                <div id="dia2" class="tab-pane fade">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel full credenciamento">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
                             </div>
-                            <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingTwo2">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingThree2">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
+                            <div class="single">
+                                <h5 class="time w-100 text-center"><span><strong>14:00</strong></span></h5>
+                                <h4 class="text-uppercase w-100 text-center">início do credenciamento</h4>
                             </div>
                         </div>
                     </div>
-
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Como Análise de Dados com Python me ajudou a correr melhor!</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Riaz Sagar</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-azul">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Tototó (Unit)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Pythinder: usando Kivy para não ficar no vácuo</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Lend</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-amarelo-escuro">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Reisado (Class Lab 2)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">(Palestra)  Unit</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:00 - 10:35</h4>
+                                            <h3 class="title">Analisando dados do ENCEEJA com Python + PowerBI</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Riaz Sagar</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-azul">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Tototó (Unit)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:00 - 10:35</h4>
+                                            <h3 class="title">Processamento de dados em tempo real com PySpark</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:00 - 11:55</h4>
+                                            <h3 class="title">(Workshop) Jornalismo de Dados em Python</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-amarelo-escuro">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Reisado (Class Lab 2)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:00 - 11:55</h4>
+                                            <h3 class="title">(Workshop) Programação com Flowgorithm (Hands on Python)</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:40 - 11:15</h4>
+                                            <h3 class="title">Os três primeiros meses de 2020 - Análise com Python do primeiro impacto do covid-19 </h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Riaz Sagar</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-azul">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Tototó (Unit)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">10:40 - 11:15</h4>
+                                            <h3 class="title">Testando seu codigo Python com Pytest</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">11:20 - 11:55</h4>
+                                            <h3 class="title">De montando UTI de Covid para ir montar layout: o que aprendi na transição de carreira?</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Riaz Sagar</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-azul">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Tototó (Unit)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">11:20 - 11:55</h4>
+                                            <h3 class="title">Astrofísica & Python: Um Elo Essencial.</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div id="menu2" class="tab-pane fade">
-
-                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                <div id="dia3" class="tab-pane fade">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingOne3">
-                                <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="location bg-vermelho">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Barco de Fogo (TIC)</span>
+                                </a>
                             </div>
-                            <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Como Análise de Dados com Python me ajudou a correr melhor!</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Riaz Sagar</span></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingTwo3">
+                            <div class="location bg-azul">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Tototó (Unit)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
                                 <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo3" aria-expanded="true" aria-controls="collapseTwo3">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
+                                    <div class="lgx-single-schedule">
+                                        <div class="author">
+                                            <img class="w-100" src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
                                         </div>
-                                    </a>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Pythinder: usando Kivy para não ficar no vácuo</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="panel panel-default lgx-panel">
-                            <div class="panel-heading" role="tab" id="headingThree3">
+                            <div class="location bg-verde">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Xingó (Class Lab 1)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
                                 <div class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3">
-                                        <div class="lgx-single-schedule">
-                                            <div class="author">
-                                                <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Speaker">
-                                            </div>
-                                            <div class="schedule-info">
-                                                <h4 class="time">09:00 <span>Am</span> - 10.30 <span>Am</span></h4>
-                                                <h3 class="title">Digital World Event Introduction</h3>
-                                                <h4 class="author-info">By <span>Joanna Smith</span> , Design Apple</h4>
-                                            </div>
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
                                         </div>
-                                    </a>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">Lend</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p class="text">
-                                        Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.
-                                    </p>
-                                    <h4 class="location"><strong>Location:</strong>  Hall 1, Building A , Golden Street , <span>Southafrica</span> </h4>
+                            
+                        </div>
+                        <div class="panel panel-default lgx-panel">
+                            <div class="location bg-amarelo-escuro">
+                                <a href="https://goo.gl/maps/Vb87B992RZMQojmS6">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="30px" height="20px" viewBox="0 0 395.71 395.71" role="img" aria-label="Localização" xml:space="preserve">
+                                            <g>
+                                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                    <strong>Trilha: </strong> <span> Reisado (Class Lab 2)</span>
+                                </a>
+                            </div>
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <div class="lgx-single-schedule">
+                                        <div class="author author-multi">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker1.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker2.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker3.jpg" alt="Palestrante">
+                                            <img src="https://themearth.com/demo/html/emeet/view/assets/img/schedule/speaker4.jpg" alt="Palestrante">
+                                        </div>
+                                        <div class="schedule-info text-center">
+                                            <h4 class="time">09:20 - 09:55</h4>
+                                            <h3 class="title">(Palestra)  Unit</h3>
+                                            <h4 class="author-info">Palestrante (s): <span>Joanna Smith</span> , <span>Riaz Sagar</span> &amp; <span>Devid Smith</span></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -905,8 +1233,34 @@
     <script>
         const modal=document.getElementById("modal"),modalImg=document.getElementById("modal-image"),modalCaption=document.getElementById("modal-caption");function closeModal(){modal.style.display="none",modalImg.src="",modalCaption.innerHTML=""}const closeModalElem=document.querySelectorAll(".close-modal");closeModalElem.forEach((function(e){e.onclick=closeModal})),modal.onclick=function(e){modal.isSameNode(e.target)&&"none"!=window.getComputedStyle(modal).display&&closeModal()};const slider=document.querySelector(".items"),slides=slider.querySelectorAll(".item"),button=slider.querySelectorAll(".button"),slidesImages=slider.querySelectorAll(".item img");if(slider&&slides){for(let e=0;e<slidesImages.length;e++)slidesImages[e].classList.contains("clickable")?slidesImages[e].onclick=function(e){window.location=e.target.dataset.href}:slidesImages[e].classList.contains("open-modal")&&(slidesImages[e].classList.add("cursor-pointer"),slidesImages[e].onclick=function(){modal.style.display="block",modalImg.src=this.src,modalCaption.innerHTML=this.alt});let e=Math.floor(Math.random()*slides.length),o=e>0?e-1:slides.length-1,a=e<slides.length-1?e+1:0;const n=()=>{slides.forEach((e=>{e.classList.remove("active"),e.classList.remove("prev"),e.classList.remove("next")})),slides[e].classList.add("active"),slides[o].classList.add("prev"),slides[a].classList.add("next")};for(let e=0;e<button.length;e++)button[e].addEventListener("click",(()=>0==e?t():s()));const t=()=>l(e>0?e-1:slides.length-1),s=()=>e<slides.length-1?l(e+1):l(0),l=t=>{e=t,o=e>0?e-1:slides.length-1,a=e<slides.length-1?e+1:0,n()};n()}const cobracaju=document.getElementById("cobracaju"),cobracajuObj={container:cobracaju,path:"cobracaju_main.json",renderer:"svg",loop:!1,autoplay:!0,name:"Cobra Caju"};let bodymovinInstanceCobracaju=null;const loadBodyMovinInstanceCobracaju=function(e){cobracajuObj.path=e,bodymovinInstanceCobracaju=bodymovin.loadAnimation(cobracajuObj)},callLoadFunction=function(){cobracaju.innerHTML="";let e="";var o;window.innerWidth<768?(console.log("alterando logo para mobile..."),e="cobracaju_mobile.json",document.body.classList.contains("noturno")&&(e="cobracaju_mobile_darkmode.json")):(console.log("alterando logo para desktop..."),e="cobracaju_main.json",document.body.classList.contains("noturno")&&(e="cobracaju_main_darkmode.json")),o=e,cobracajuObj.path=o,bodymovinInstanceCobracaju=bodymovin.loadAnimation(cobracajuObj)};callLoadFunction();let resizeInternval=null;window.addEventListener("resize",(function(){clearTimeout(resizeInternval),resizeInternval=setTimeout(callLoadFunction,100)}),!0);const raboCobracaju=document.getElementById("rabo"),raboCobracajuObj={container:raboCobracaju,path:"rabo.json",renderer:"svg",loop:!0,autoplay:!0,name:"Rabo da Cobra Caju"};let bodymovinInstanceRabo=null;const loadRaboCobracaju=function(){raboCobracaju.innerHTML="",bodymovinInstanceRabo=bodymovin.loadAnimation(raboCobracajuObj)};raboCobracaju.innerHTML="",bodymovinInstanceRabo=bodymovin.loadAnimation(raboCobracajuObj);const btnDarkmode=document.getElementById("btnDarkmode");btnDarkmode.addEventListener("click",(function(e){e.preventDefault(),document.body.classList.toggle("noturno"),callLoadFunction()}));const divCampos=document.getElementById("campos"),divMsgForm=document.getElementById("mensagem-sucesso"),btnForm=document.getElementById("enviar-form"),msgTextarea=document.getElementById("msg"),emailInput=document.getElementById("email"),assuntoInput=document.getElementById("assunto");btnForm.addEventListener("click",(function(e){e.preventDefault(),btnForm.disabled=!0;let o=!0;const a={};if(a.assunto=assuntoInput.value?.trim(),a.mensagem=msgTextarea.value?.trim(),a.email=emailInput.value?.trim(),a.email?.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)?emailInput.classList.remove("error"):(emailInput.classList.add("error"),o=!1),a.assunto?assuntoInput.classList.remove("error"):(assuntoInput.classList.add("error"),o=!1),a.mensagem?msgTextarea.classList.remove("error"):(msgTextarea.classList.add("error"),o=!1),o){console.log("Enviando e-mail...");var n=new XMLHttpRequest;n.open("POST","https://script.google.com/macros/s/AKfycbwstFWAQ-mk9nXoTJPOBOClAlcRbnUwmzNlXUdwp0f1Nonps1hVG_W2hrlkm394XmO67A/exec"),n.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(console.log("E-mail enviado."),divCampos.classList.add("display-none"),divMsgForm.classList.remove("display-none"))};var t=Object.keys(a).map((function(e){return encodeURIComponent(e)+"="+encodeURIComponent(a[e])})).join("&");n.send(t)}else btnForm.disabled=!1}));
         const layzLoadImages=document.querySelectorAll("img.lazy-loading");const imgOptions={threshold:0.2};const imgObserver=new IntersectionObserver((entries,imgObserver)=>{entries.forEach((entry)=>{if(!entry.isIntersecting)return;const img=entry.target;image_path=img.getAttribute("data-src")
-img.src=image_path
-imgObserver.unobserve(entry.target)})},imgOptions);layzLoadImages.forEach((img)=>{imgObserver.observe(img)})
+        img.src=image_path
+        imgObserver.unobserve(entry.target)})},imgOptions);layzLoadImages.forEach((img)=>{imgObserver.observe(img)});
+
+        window.addEventListener("load", function() {
+            const navPill = document.getElementById("nav-agenda")
+            const tabs = navPill.querySelectorAll("li");
+            function myTabClicks(tabClickEvent) {
+                    for (var i = 0; i < tabs.length; i++) {
+                        tabs[i].classList.remove("active");
+                    }
+                    const clickedTab = tabClickEvent.currentTarget;
+                    clickedTab.classList.add("active");
+                    tabClickEvent.preventDefault();
+
+                    const contentPanes = document.querySelectorAll("div#tab-panel-agenda .tab-pane");
+                    for (i = 0; i < contentPanes.length; i++) {
+                        contentPanes[i].classList.remove("active");
+                    }
+                    const anchorReference = clickedTab.querySelector("a");
+                    const activePaneId = anchorReference.getAttribute("data-href");
+                    const activePane = document.querySelector(activePaneId);
+                    activePane.classList.add("active");
+            }
+
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].addEventListener("click", myTabClicks)
+            }
+        });
     </script>
 </body>
 </html>
