@@ -501,11 +501,15 @@ section#patrocinio div#patrocinadores a {
     justify-content: center;
     display: flex;
 } 
+div#patrocinadores > h4 {
+    margin: 1rem 0 1.5rem;
+}
 div#patrocinadores a {
     display: block;
 }
 section#patrocinio div#patrocinadores img {
     max-height: 150px;
+    margin-bottom: 2em;
 } 
 body.noturno section#patrocinio div#patrocinadores img {
     background: rgb(255 255 255);
@@ -513,14 +517,13 @@ body.noturno section#patrocinio div#patrocinadores img {
     border-radius: 10px;
 }
 section#patrocinio div#patrocinadores #diamante a img {
-    max-width: 267px;
+    max-width: 250px;
 }
 section#patrocinio div#patrocinadores #ouro a img {
     max-width: 215px;
 }
 div#patrocinadores .menor a img {
     max-width: 130px;
-    margin-bottom: 2em;
 }
 
 footer .campo input, footer .campo textarea {
@@ -855,6 +858,9 @@ img:not([src]) {
     }
     .display-md {
         display: block;
+    }
+    section#patrocinio div#patrocinadores #diamante a img {
+        max-width: 267px;
     }
 }
 @media (min-width: 992px) {
