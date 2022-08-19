@@ -575,6 +575,10 @@ body.noturno section#patrocinio div#patrocinadores img {
     padding: 5px;
     border-radius: 10px;
 }
+section#patrocinio .mw {
+    max-width: 700px;
+    margin: auto;
+}
 section#patrocinio div#patrocinadores #diamante a img {
     max-width: 250px;
 }
@@ -1116,6 +1120,9 @@ section#agenda li a {
     section#patrocinio div#patrocinadores a {
         width: calc(33.3333333% - 10px);
     }
+    section#patrocinio div#patrocinadores #diamante a {
+        width: calc(50% - 10px);
+    }
 }
 @media (min-width: 768px) {
     .coluna {
@@ -1264,6 +1271,9 @@ section#agenda li a {
     }
     div#cobracaju {
         min-height: 650px;
+    }
+    section#patrocinio div#patrocinadores #diamante a {
+        width: calc(33.3333333% - 10px);
     }
 }
 @media (min-width: 1800px) {
