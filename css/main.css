@@ -983,6 +983,9 @@ section#agenda li a {
   .lgx-single-schedule .author-multi img {
     width: 75%;
   }
+  .panel-group .panel.full .lgx-single-schedule .author-multi img {
+      margin-bottom: 10px;
+  }
   .panel-group .panel.full .lgx-single-schedule .author,
   .panel-group .panel.full .lgx-single-schedule .author-multi {
         max-width: 200px;
@@ -992,10 +995,6 @@ section#agenda li a {
           display: flex;
           flex-wrap: wrap;
       }
-    .panel-group .panel.full .lgx-single-schedule .author-multi img {
-        width: calc(50% - 5px);
-        margin: 0 5px 5px 0;
-    }
   .lgx-single-schedule .schedule-info {
     width: 100%;
     background: #fff;
@@ -1174,6 +1173,10 @@ section#agenda li a {
     }
     section#patrocinio div#patrocinadores #diamante a img {
         max-width: 267px;
+    }
+    .panel-group .panel.full .lgx-single-schedule .author-multi img {
+        width: calc(50% - 5px);
+        margin: 0 5px 5px 0;
     }
 }
 @media (min-width: 992px) {
