@@ -98,6 +98,10 @@ h4 {
     color: #e75a00
 }
 
+.roxo {
+    color: #5E17EB;
+}
+
 .bg-verde {
     background-color: #00923f
 }
@@ -118,9 +122,20 @@ h4 {
     background-color: #150069
 }
 
+.bg-roxo {
+    background-color: #5E17EB;
+}
+
+.bg-laranja {
+    background-color: #E56B52;
+}
 
 .bg-laranja-escuro {
     background-color: #e75a00
+}
+
+.bg-rosa {
+    background-color: #D70086;
 }
 
 body.noturno 
@@ -293,6 +308,11 @@ navbar ul li {
 navbar ul li a.patrocinio span {
     top: 15px;
     font-size: 9px;
+}
+
+navbar ul li a.agenda span {
+    top: 15px;
+    font-size: 11px;
 }
 
 body.noturno footer .ondas {
@@ -871,7 +891,7 @@ section#agenda li a {
   }
   #nav-agenda .active {
     position: relative;
-    background: #e75a00;
+    background: #5E17EB;
   }
   #nav-agenda .active a:focus,
   #nav-agenda .active a:hover {
@@ -996,6 +1016,9 @@ section#agenda li a {
     font-weight: 500;
     margin: 0;
   }
+  .lgx-single-schedule .schedule-info .title.keynote {
+    margin-top: 1rem;
+  }
   .panel-group .panel h4 {
     font-size: 15px;
     font-weight: 400;
@@ -1003,6 +1026,12 @@ section#agenda li a {
   }
   .panel-group .panel h4 span {
     color: #ac006a;
+  }
+  .lgx-single-schedule .schedule-info h3.author-info.keynote {
+    margin: 1rem 0;
+  }
+  .lgx-single-schedule .schedule-info .keynote span {
+    padding: 5px;
   }
   #tab-panel-agenda .tab-pane {
     display: none;
@@ -1192,6 +1221,9 @@ section#agenda li a {
     }
     navbar ul li a.patrocinio span {
         font-size: 11px;
+    }
+    navbar ul li a.agenda span {
+        font-size: 13px;
     }
     navbar ul li a.coc span {
         font-size: 12px;
