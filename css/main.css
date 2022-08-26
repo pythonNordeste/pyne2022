@@ -597,6 +597,7 @@ footer .campo input, footer .campo textarea {
     margin-bottom: 20px;
     width: 100%;
     border: 3px solid transparent;
+    box-sizing:border-box;
 }
 
 footer .campo input.error, footer .campo textarea.error {
@@ -617,6 +618,10 @@ footer .campo textarea {
 
 .social-media img {
     width: 50px;
+}
+
+footer .copyright {
+    padding: 0 10px
 }
 
 .text-center.icones {
@@ -1062,6 +1067,21 @@ section#agenda li a {
 .panel-group .panel.full .single h5 span {
   text-transform: none;
   font-size: 1.3rem;
+}
+
+div#faq > h2 {
+    margin-bottom: 10px;
+} 
+
+div#faq div#faq-doc {
+    display: flex;
+}
+
+div#faq iframe {
+    margin: 30px auto 0 auto;
+    min-height: 700px; 
+    width: 830px;
+    max-width: 100%;
 }
 
 @media (max-width: 1199px) {
